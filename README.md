@@ -1,7 +1,13 @@
 # CSG.Sharp
 
-![](https://img.shields.io/badge/.net-v4.5.2-blue.svg)
+![](https://img.shields.io/badge/.net8.0-blue.svg)
 ![](https://img.shields.io/badge/build-passing-green.svg)
+
+This is a .Net8.0 port/fork of the PSneijders [CSG.Sharp library](https://github.com/PSneijder/CSG.Sharp). The original library was written in .Net-Framework and was not published to NuGet.
+This is a slimmed down version with some bugfixes and extensions.
+
+
+# OG Readme:
 
 Constructive solid geometry on meshes using BSP trees in C#
 

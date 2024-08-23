@@ -28,5 +28,14 @@ namespace CSG.Sharp
 
             Assert.IsNotNull(c);
         }
+
+        [TestMethod]
+        public void SubtractionTest()
+        {
+            var cube = Cube.Create(new Vector(10, 10, 10), 10);
+            var cylinder = Cylinder.Create(new Vector(10, 10, 10), new Vector(10, 0, 10), 5);
+            var polygons=cube.Subtract(cylinder).ToPolygons();
+            Assert.AreEqual(55, polygons.Length);
+        }
     }
 }

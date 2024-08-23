@@ -71,7 +71,7 @@ namespace CSG.Sharp
             if (_back != null) back = _back.ClipPolygons(back).ToList();
             else back = Enumerable.Empty<Polygon>().ToList();
 
-            return front.Concat(back).ToArray();
+            return front.Concat(back).ToList();
         }
 
         // Remove all polygons in this BSP tree that are inside the other BSP tree
